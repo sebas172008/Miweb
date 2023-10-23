@@ -1,57 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Página Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        nav {
-            background-color: #555;
-            text-align: center;
-            padding: 10px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
+        /* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00FFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FF00FF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: #FFFF33;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+section {
+    padding: 20px;
+    background-color: #FFA07A;
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos específicos para secciones */
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Estilos para la sección de proyectos */
+.proyecto {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #FF00FF;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Cambia los estilos según tus preferencias */
+
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Mi Página Web</h1>
+        <h1>Mi Nombre</h1>
+        <p>Desarrollador Web</p>
     </header>
+    
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Acerca de</a>
-        <a href="#">Servicios</a>
-        <a href="#">Contacto</a>
+        <ul>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
     </nav>
-    <div class="container">
-        <h2>Bienvenido a mi página web</h2>
+
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>Aquí puedes escribir una breve introducción sobre ti, tus habilidades y tu experiencia.</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del primer proyecto.</p>
+        </div>
+        <div class="proyecto">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del segundo proyecto.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme en: correo@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mi Portafolio</p>
+    </footer>
+</body>
+</html>
